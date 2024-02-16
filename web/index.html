@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Scouting Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Team Scouting Data</h1>
+
+    <div class="container">
+        <h2>Data Entry</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="team_number">Team Number:</label>
+                <input id="team_number" name="team_number" required>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label for="round_number">Round Number:</label>
+                <input id="round_number" name="round_number" required>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label for="auton_notes">Autonomous Notes:</label>
+                <textarea id="auton_notes" name="auton_notes"></textarea>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label for="speed">Speed:</label>
+                <input id="speed" name="speed">
+            </div>
+            <br/>
+            <div class="form-group">
+                <label for="extra_notes">Extra Notes:</label>
+                <textarea id="extra_notes" name="extra_notes"></textarea>
+            </div>
+            <br/>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"> </script>
+</body>
+</html>
